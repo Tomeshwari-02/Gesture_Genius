@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gesture Genius</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Add any additional styles here */
+        body {
+            margin: 0;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+        #hero {
+            transition: transform 0.2s ease; /* Smooth transition */
+        }
+    </style>
+</head>
+<script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '66f716aa4d2b03e5066126b3' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production'
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+</script>
+<body>
+    <header>
+        <div class="logo">
+            <h1>GESTURE GENIUS</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Games</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="chatbot.html" class="cta-button">Chatbot</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <!-- Two square boxes at the top with images -->
+            <div class="square-boxes">
+                <div class="box">
+                    <img src="car_game_1.jpg" alt="Image 1">
+                </div>
+                <div class="box">
+                    <img src="car_game_2.jpg" alt="Image 2">
+                </div>
+
+            <!-- Small animated picture in rectangular form below square boxes -->
+            <div class="animated-picture">
+                <img src="gesture_control_image.gif" alt="Gesture Control Animation">
+            </div>
+        </div>
+
+        
+
+        <button id="downloadButton">Download ZIP</button>
+         
+    </section>
+
+    <footer>
+        <div class="animated-picture-2">
+            <img src="NeeD.jpg" alt="Gesture Control Animation">
+        </div>
+         
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        window.addEventListener('scroll', function() {
+            const heroSection = document.getElementById('hero');
+            const scrollPosition = window.scrollY;
+
+            // Increase the size of the hero section as you scroll
+            heroSection.style.transform = `scale(${1 + scrollPosition / 1000})`;
+        });
+    </script>
+</body>
+</html>
