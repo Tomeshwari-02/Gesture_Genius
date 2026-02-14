@@ -74,7 +74,6 @@ Gesture Genius promotes **accessibility, affordability, and futuristic interacti
 | Move Hand Right | Steer Right |
 | Open Palm | Accelerate |
 | Closed Fist | Brake |
-| Two Fingers Up | Nitro Boost |
 
 ---
 
